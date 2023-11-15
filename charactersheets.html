@@ -30,7 +30,7 @@
 
         .image-container img {
             max-width: 100%; /* Set maximum width to 100% of the container */
-            height: auto; /* Maintain aspect ratio */
+            height: 100%; /* Maintain aspect ratio */
             margin: 0 10px; /* Adjust the margin between images */
             margin-bottom: 10px; /* Add margin at the bottom of each image */
         }
@@ -43,6 +43,7 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            text-decoration: none; /* Remove default underline for anchor tag */
         }
     </style>
 </head>
@@ -52,10 +53,11 @@
             <img src="https://64.media.tumblr.com/0e2727bf9086fa34b201623536b17f01/370d61c748744241-02/s640x960/43e6efa9f4408b32fc31a0f6459d47ed6281584a.png" alt="Matt's Characters">
             <img src="https://64.media.tumblr.com/0e2727bf9086fa34b201623536b17f01/370d61c748744241-02/s640x960/43e6efa9f4408b32fc31a0f6459d47ed6281584a.png" alt="Trey's Characters">
         </div>
-        <button class="return-button" onclick="returnToSorter()">Return to Sorter</button>
+        <a href="link-to-sorter" class="return-button">Return to Sorter</a>
     </div>
 
     <script>
+        // You can keep your JavaScript code as it is
         function returnToSorter() {
             // Add your code to handle the return to sorter action
             alert("Returning to Sorter!");
