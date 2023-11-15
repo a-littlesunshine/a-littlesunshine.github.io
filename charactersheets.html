@@ -1,70 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Page</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #000; /* Black background */
-            color: #fff; /* White text color */
-            font-family: Arial, sans-serif;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: top;
-            justify-content: center;
-            height: 100vh; /* Make the container take the full viewport height */
-        }
-
-        .image-container {
-            display: flex;
-            flex-wrap: wrap; /* Allow images to wrap to the next line on smaller screens */
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-
-        .image-container img {
-            max-width: 100%; /* Set maximum width to 100% of the container */
-            height: auto; /* Maintain aspect ratio */
-            margin: 0 10px; /* Adjust the margin between images */
-            margin-top: 10px;
-            margin-bottom: 10px; /* Add margin at the bottom of each image */
-            display: block; /* Remove extra space under the image */
-        }
-
-        .return-button {
-            background-color: #7759ac; /* Purple button background color */
-            color: #fff; /* White button text color */
-            padding: 10px 20px;
-            font-size: 18px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none; /* Remove default underline for anchor tag */
-        }
-    </style>
-</head>
 <body>
-    <div class="container">
-        <div class="image-container">
             <img src="https://64.media.tumblr.com/0e2727bf9086fa34b201623536b17f01/370d61c748744241-02/s640x960/43e6efa9f4408b32fc31a0f6459d47ed6281584a.png" alt="Matt's Characters">
             <img src="https://64.media.tumblr.com/0e2727bf9086fa34b201623536b17f01/370d61c748744241-02/s640x960/43e6efa9f4408b32fc31a0f6459d47ed6281584a.png" alt="Trey's Characters">
         </div>
-        <a href="link-to-sorter" class="return-button">Return to Sorter</a>
+        <a href="link-to-sorter">Return to Sorter</a>
     </div>
-
-    <script>
-        // You can keep your JavaScript code as it is
-        function returnToSorter() {
-            // Add your code to handle the return to sorter action
-            alert("Returning to Sorter!");
-            // You may want to navigate to the sorter page or perform other actions here
-        }
-    </script>
-</body>
 </html>
