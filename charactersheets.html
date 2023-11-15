@@ -3,52 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Character Sheets</title>
+    <title>Image Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text color */
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Make the container take the full viewport height */
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            width: 621px; /* Adjust the image width as needed */
+            height: auto; /* Maintain aspect ratio */
+            margin: 0 10px; /* Adjust the margin between images */
+        }
+
+        .return-button {
+            background-color: #7759ac; /* Purple button background color */
+            color: #fff; /* White button text color */
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="image-container">
-            <img src="https://64.media.tumblr.com/0e2727bf9086fa34b201623536b17f01/370d61c748744241-02/s640x960/43e6efa9f4408b32fc31a0f6459d47ed6281584a.png" alt="Matt Characters">
-            <img src="path/to/your/image2.jpg" alt="Image 2">
+            <img src="https://64.media.tumblr.com/0e2727bf9086fa34b201623536b17f01/370d61c748744241-02/s640x960/43e6efa9f4408b32fc31a0f6459d47ed6281584a.png" alt="Matt's Characters">
+            <img src="https://64.media.tumblr.com/0e2727bf9086fa34b201623536b17f01/370d61c748744241-02/s640x960/43e6efa9f4408b32fc31a0f6459d47ed6281584a.png" alt="Trey's Characters">
         </div>
-        <div class="return-link">
-            <a href="https://a-littlesunshine.github.io/mattreysort/">Return to Sorter</a>
-        </div>
+        <button class="return-button" onclick="returnToSorter()">Return to Sorter</button>
     </div>
+
+    <script>
+        function returnToSorter() {
+            // Add your code to handle the return to sorter action
+            alert("Returning to Sorter!");
+            // You may want to navigate to the sorter page or perform other actions here
+        }
+    </script>
 </body>
 </html>
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text color */
-    font-family: Arial, sans-serif;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Make the container take the full viewport height */
-}
-
-.image-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.image-container img {
-    width: 621px; /* Adjust the image width as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin: 0 10px; /* Adjust the margin between images */
-}
-
-.return-link a {
-    color: #fff; /* White link color */
-    text-decoration: none;
-    font-size: 18px;
-}
